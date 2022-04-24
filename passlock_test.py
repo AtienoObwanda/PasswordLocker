@@ -25,3 +25,15 @@ class TestUser(unittest.TestCase):
             self.assertEqual(self.new_user.lastName, "Obwanda")
             self.assertEqual(self.new_user.email, "atienoobwanda@gmail.com")
             self.assertEqual(self.new_user.password, "atienoobwanda@gmail.com")
+
+        def test_save_user(self):
+            '''
+            Checks to see if there is a new user created
+            '''
+            self.new_user.save_user()
+            self.assertEqual(len(User.user_list),1)
+
+
+
+
+
