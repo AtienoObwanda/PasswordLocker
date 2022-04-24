@@ -5,8 +5,9 @@ import pyperclip
 class User:
     '''
     Class that generates new instances of users
+    
     '''
-    userlist=[]
+    userlist=[] #Empty list of users
 
     def __init__(self, firstName, lastName,  email, password):
         '''
