@@ -17,5 +17,20 @@ class User:
         self.lastName = lastName
         self.email = email
         self.password = password
+
+
+    def save_user(self):
+        '''
+        Method that saves the users
+        '''
+        User.userlist.append(self)
+    
+    def delete_user(self):
+        '''
+        Method that deletes the users
+        '''
+        User.userlist.remove(self)
+    
+    
         
-        
+
