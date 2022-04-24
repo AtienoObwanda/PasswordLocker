@@ -39,7 +39,22 @@ class User:
         '''
         return cls.userlist
     @classmethod
-    
+
+    def findByEmail(cls, email):
+        '''
+        Takes in an email address and returns a list of users that match the email
+        '''
+
+
+
+
+
+
+
+
+
+
+
 
     
     
