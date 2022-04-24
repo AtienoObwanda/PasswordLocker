@@ -4,8 +4,8 @@ import random
 from passlock import User
 from passlock import Credentials
 
-def createUser(fName, Lname, uName, email, pWord):
-    newUser = User(fName, Lname, uName, email, pWord)
+def createUser(firstName, lastName,  email, password):
+    newUser = User(firstName, lastName,  email, password)
     return newUser
 
 def saveUser(user):
@@ -18,7 +18,7 @@ def displayUser(email):
     return User.findByEmail(email)
 
 def createAccount(accountName, accountUser, accountPassword):
-    newaccount=(accountUser, accountName, accountPassword)
+    newaccount=(accountUser, accountName,accountEmail, accountPassword)
     return newaccount
 
 def save_account(user):
@@ -76,22 +76,21 @@ while True:
     if inp=="SU":
         print("SIGN UP FOR PASS BANK")
         print("----------------------------------------------------------------")
-        fName=input("Enter your first name: ")
-        lName=input("Enter your last name: ")
-        uName=input("Enter your username: ")
+        firstName=input("Enter your first name: ")
+        lastName=input("Enter your last name: ")
         # if lName.len > 4:
         #     print("User name must be at least 4 characters...")
         # else:
         email=input("Enter your email address: ")
-        pWord=input("Enter your password: ")
+        password=input("Enter your password: ")
             # if pWord==1234:
             #     print ("Please enter a strong password")
 
-        saveUser(creteUser(fName, lName, uName, email, pWord))
+        saveUser(createUser(firstName, lastName,  email, password))
         print("----------------------------------------------------------------")
         print("Congratulations, account has been created successfully!")
         print("----------------------------------------------------------------")
-        print(r"Name: {fName} {lName} \Username: {uName} \nEmail: {email} \password: {pWord}")
+        print(f"Name:{firstName} {lastName}  \nEmail: {email} \npassword: {password}")
         print('\n')
         print("----------------------------------------------------------------")
         inp=input("Enter LG to proceed to Login-----> LG")
@@ -101,7 +100,7 @@ while True:
         print('\n')
         loginPassword=input("Enter your password: ")
         print("----------------------------------------------------------------")
-        if displayUser(loginEmail, loginPassword):
+        if displayUser(email, password):
             print("\n")
             choice=input("You can: 1. Create new pass bank-->AC \n2. View existing passwords-->VC \n: ")
             print('\n')
@@ -140,7 +139,7 @@ while True:
                 print("Active accounts:")
                 print("----------------------------------------------------------------")
                 for user in display_account():
-                    print(r"Account: {user.accountName} \n Email: {user.accountEmail}\n Username: {user.accountUser} \n Password: {user.accountPassword}")
+                    print(f"Account: {user.accountName} \n Email: {user.accountEmail}\n Username: {user.accountUser} \n Password: {user.accountPassword}")
             
                 else:
                     print("Invalid credentials!!!")
