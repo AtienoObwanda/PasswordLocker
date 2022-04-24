@@ -5,7 +5,7 @@ import pyperclip
 class User:
     '''
     Class that generates new instances of users
-    
+
     '''
     userlist=[] #Empty list of users
 
@@ -41,10 +41,25 @@ class User:
         return cls.userlist
     @classmethod
 
-    def findByEmail(cls, email):
+    def find_email(cls, email):
         '''
         Takes in an email address and returns a list of users that match the email
         '''
+        for user in cls.userlist:
+            if user.email == email:
+                return user
+    @classmethod
+
+    def check_user(cls, email):
+        '''
+        Checks for a user with the given email
+        '''
+        for user in cls.userlist:
+            if user.email == email:
+                return True
+            else:
+                return False
+
 
 
 
