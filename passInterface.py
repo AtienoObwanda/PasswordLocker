@@ -24,12 +24,22 @@ class User:
         Method that saves the users
         '''
         User.userlist.append(self)
-    
+    @classmethod
+
     def delete_user(self):
         '''
         Method that deletes the users
         '''
         User.userlist.remove(self)
+    @classmethod
+
+    def display_user(cls):
+        '''
+        Method that displays the user information
+        '''
+        return cls.userlist
+    @classmethod
+    
 
     
     
