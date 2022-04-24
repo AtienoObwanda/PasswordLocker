@@ -30,7 +30,9 @@ class User:
         Method that deletes the users
         '''
         User.userlist.remove(self)
+
     
     
+
         
 
