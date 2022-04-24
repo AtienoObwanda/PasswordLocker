@@ -62,8 +62,12 @@ class User:
 
 
 
+class Credentials:
+    '''
+    Class for generating credentials
+    '''
 
-
+    accounts=[] #an empty list for accounts
 
 
 
