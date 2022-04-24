@@ -1,6 +1,8 @@
-import unnitest
+import unittest
+import pyperclip
 
 from passlock import User
+
 
 class TestUser(unittest.TestCase):
     '''
@@ -14,3 +16,12 @@ class TestUser(unittest.TestCase):
         Initial method that runs before any other methods
         '''
         self.new_user = User("Atieno", "Obwanda", "atienoobwanda@gmail.com","new2022!") #User Object
+
+        def test_init(self):
+            '''
+            Checks if the object was initialized successfully
+            '''
+            self.assertEqual(self.new_user.firstName, "Atieno")
+            self.assertEqual(self.new_user.lastName, "Obwanda")
+            self.assertEqual(self.new_user.email, "atienoobwanda@gmail.com")
+            self.assertEqual(self.new_user.password, "atienoobwanda@gmail.com")
