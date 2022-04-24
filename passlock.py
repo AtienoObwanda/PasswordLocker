@@ -1,5 +1,6 @@
 import random
 import string
+from threading import activeCount
 import pyperclip
 
 class User:
@@ -69,6 +70,45 @@ class Credentials:
 
     accounts=[] #an empty list for accounts
 
+    def __init__(self, accountName, accountEmail, accountPassword):
+        '''
+        Method to define the properties of object self.
+        '''
+        self.accountName = accountName
+        self.accountEmail = accountEmail
+        self.accountPassword = accountPassword
+        
+    def saveAccount(self):
+        '''
+        Saves the credentials
+        '''
+        Credentials.account.append(self)
+
+    def deleteAccount(self):
+        '''
+        Deletes the credentials
+        '''
+        Credentials.account.remove(self)
+    @classmethod
+
+    def displayAccount(cls):
+        global account 
+        '''
+        Returns active accounts
+        '''
+        for account in cls.accounts:
+            return cls.accounts 
+    @classmethod
+
+    def findAccountByEmail(cls, email):
+        '''
+        A method that takes in the email address and returns the account associated with that email
+        '''
+        for account in cls.accounts:
+            if account.email == email:
+                return account
+            else:
+                print("Oops... account not found!")
 
 
 
