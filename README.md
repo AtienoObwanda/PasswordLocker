@@ -15,7 +15,8 @@
 
 **Behavior Driven Development**
 ****
-*Upon getting started with the program, SI gives the user the option of Signing In while SU gives them the option Signing Up*
+*Upon getting started with the program, SI gives the user the option of Signing In while SU gives them the option Signing Up* <br />
+
 ![Alt text](./images/main.png?raw=true "Optional Title")
 
 *Users can also be able to:* 
@@ -24,10 +25,10 @@
 
 
 **Search credentials:**
-<!-- ![Alt text](./images/search.png?raw=true "Optional Title") -->
+![Alt text](./images/search.png?raw=true "Optional Title")
 
 **View available credential**
-<!-- ![Alt text](./images/view.png?raw=true "Optional Title") -->
+![Alt text](./images/view.png?raw=true "Optional Title")
 
 *They can also opt to delete credentials, generate passwords, and finally, exit the application*
 
