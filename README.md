@@ -20,11 +20,11 @@ cd PasswordLocker
 <br />
 *Depending on your code editor,run this on your terminal* <br />
 *VS Code*<br />
-```py
+```mypy
 code .
 ```
 *Atom* <br />
-```py
+```python3
 atom .
 ```
 <br />
