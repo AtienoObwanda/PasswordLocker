@@ -20,9 +20,10 @@ cd PasswordLocker
 
 <br />
 *Depending on your code editor,run this on your terminal* <br />
-*VS Code*<br />
+<br />
+*VSCode*<br />
 ```
-code .
+atom .
 ```
 <br />
 
