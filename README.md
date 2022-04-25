@@ -14,17 +14,20 @@ git clone git@github.com:AtienoObwanda/PasswordLocker.git
 ```
 <br />
 *Once the program has been cloned, run this on your terminal* <br />
-```py
+```
 cd PasswordLocker
 ```
+
 <br />
 *Depending on your code editor,run this on your terminal* <br />
 *VS Code*<br />
-```mypy
+```
 code .
 ```
+<br />
+
 *Atom* <br />
-```python3
+```
 atom .
 ```
 <br />
