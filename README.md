@@ -1,5 +1,5 @@
 # Password Locker
-![Alt text](./images/welcome.png.png?raw=true "Optional Title")
+![Alt text](./images/welcome.png?raw=true "Optional Title")
 
 **Description**
 *A web application for  generating and managing  passwords.*
