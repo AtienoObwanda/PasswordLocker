@@ -1,4 +1,4 @@
-# Password Locker
+# Password Bank
 ![Alt text](./images/welcome.png?raw=true "Optional Title")
 
 **Description**
@@ -21,6 +21,7 @@ cd PasswordLocker
 ```
 
 <br />
+
 *Depending on your code editor,run this on your terminal:* <br />
 
 <br />
