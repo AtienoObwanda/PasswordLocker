@@ -25,7 +25,7 @@ class TestClass(unittest.TestCase):
 
         """
         self.new_user.save_user()
-        self.assertEqual(len(User.user_list),1)
+        self.assertEqual(len(User.users),1)
 
 class TestCredentials(unittest.TestCase):
     """
