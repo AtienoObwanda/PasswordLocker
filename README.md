@@ -6,8 +6,30 @@
 *A web application for  generating and managing  passwords.* <br />
 *It is basically a password bank!*
 
-**Setup/Installation Requirements**
+**Setup/Installation Requirements** 
+****
+*From your terminal:* <br />
+```py
+git clone git@github.com:AtienoObwanda/PasswordLocker.git
+```
+<br />
+*Once the program has been cloned, run this on your terminal* <br />
+```py
+    cd PasswordLocker
+```
+<br />
+*Depending on your code editor,run this on your terminal* <br />
+*VS Code*<br />
+```py
+    code .
+```
+*Atom* <br />
+```js
+    atom .
+```
+<br />
 *In order to run this project your can git clone it and then open the app in the editor of your choice,open your terminal and run the run.py file and the app will kick start*
+<br />
 
 **Known Bugs**
 ****
@@ -19,12 +41,12 @@
 
 ![Alt text](./images/main.png?raw=true "Optional Title")
 
-*Users can also be able to:* 
-**create credentials:**
+*Users can also be able to:* <br />
+**create credentials:** <br />
 ![Alt text](./images/createAccount.png?raw=true "Optional Title")
 
 
-**Search credentials:**
+**Search credentials:**<br />
 ![Alt text](./images/search.png?raw=true "Optional Title")
 
 **View available credential**
