@@ -2,7 +2,8 @@
 ![Alt text](./images/welcome.png?raw=true "Optional Title")
 
 **Description**
-*A web application for  generating and managing  passwords.*
+****
+*A web application for  generating and managing  passwords.* <br />
 *It is basically a password bank!*
 
 **Setup/Installation Requirements**
@@ -15,11 +16,11 @@
 **Behavior Driven Development**
 ****
 *Upon getting started with the program, SI gives the user the option of Signing In while SU gives them the option Signing Up*
-<!-- ![Alt text](./images/main.png.png?raw=true "Optional Title") -->
+![Alt text](./images/main.png?raw=true "Optional Title")
 
 *Users can also be able to:* 
 **create credentials:**
-<!-- ![Alt text](./images/createAccount.png?raw=true "Optional Title") -->
+![Alt text](./images/createAccount.png?raw=true "Optional Title")
 
 
 **Search credentials:**
