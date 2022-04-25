@@ -61,14 +61,14 @@ def passlocker():
     print("**That's where Pass Bank comes in!**")
     print('\n')
     print('\n')
-    print("Sign Up for new account ---> SU    \n Sign In  tp your account ---> SI \n")
-    short_code=input("").lower().strip()
-    if short_code == "su":
+    print("1. Sign Up for new account ---> SU    \n2. Sign In  tp your account ---> SI \n")
+    choice=input("").lower().strip()
+    if choice == "su":
         print("Sign Up")
         print("----------------------------------------------------------------")
-        username = input("User_name: ")
+        username = input("Preferred username: ")
         while True:
-            print(" E - Enter your own pasword:\n G - To generate random Password")
+            print("Reply with: \nE -> Enter your own pasword: \nG -> To generate a Password: ")
             password_Choice = input().lower().strip()
             if password_Choice == 'e':
                 password = input("Enter Password\n")
@@ -83,7 +83,7 @@ def passlocker():
         print(f"Dear, {username}! Congratulations, account has been created successfully!")
         print("------------------------------------------------------------------------------")
         
-    elif short_code == "si":
+    elif choice == "si":
         print("----------------------------------------------------------------")
         print("Enter your details to log in:")
         print("----------------------------------------------------------------")
@@ -98,9 +98,9 @@ def passlocker():
 
             print('\n')
     while True:
-        print("To get started, reply with:\n Create a new credential --> CC \n View Credentials --> VC  \n Search Credential --> SC \n Generate password --> G \n Delete credential --> D \n Exit the application -->  E \n")
-        short_code = input().lower().strip()
-        if short_code == "cc":
+        print("To get started, reply with:\nCreate a new credential --> CC \nView Credentials --> VC  \nSearch Credential --> SC \nGenerate password --> G \nDelete --> D \nExit the application -->  E \n")
+        choice = input().lower().strip()
+        if choice == "cc":
             print("Add Credential")
             print("----------------------------------------------------------------")
             print("Account name: ")
@@ -108,9 +108,9 @@ def passlocker():
             print("Account username: ")
             userName = input()
             while True:
-                print(" TP - To type your own pasword if you already have an account:\n G - To generate random Password")
+                print("Reply with: \nT - To enter your own pasword:\nG - To generate random Password")
                 password_Choice = input().lower().strip()
-                if password_Choice == 'tp':
+                if password_Choice == 't':
                     password = input("Enter Your Own Password\n")
                     break
                 elif password_Choice == 'g':
@@ -120,20 +120,21 @@ def passlocker():
                     print("Invalid password please try again")
             save_accounts(create_new_credential(account,userName,password))
             print('\n')
-            print(f"Account Credential for: {account} - UserName: {userName} - Password:{password} created succesfully")
+            print(f"Account Credential for: {account} - UserName: {userName} - Password:{password} created successfully")
             print('\n')
-        elif short_code == "vc":
+        elif choice == "vc":
             if display_accounts_details():
                 print("Here's your list of accounts: ")
                  
                 print("----------------------------------------------------------------")
                 for account in display_accounts_details():
-                    print(f" Account:{account.account} \n User Name:{username}\n Password:{password}")
+                    print(f" Account:{account.account} \nUser Name:{username}\nPassword:{password}")
                     print("----------------------------------------------------------------")
             else:
                 print("You don't have any credentials saved yet..........")
-        elif short_code == "sc":
+        elif choice == "sc":
             print("Enter the Account Name: ")
+            print("----------------------------------------------------------------")
             search_name = input().lower()
             if find_credential(search_name):
                 search_credential = find_credential(search_name)
@@ -142,9 +143,9 @@ def passlocker():
                 print(f"Username: {search_credential.userName} Password :{search_credential.password}")
                 print("----------------------------------------------------------------")
             else:
-                print("Credential couldn't be found does not exist")
+                print("Credential couldn't be found")
                 print('\n')
-        elif short_code == "d":
+        elif choice == "d":
             print("Enter the account name to proceed")
             search_name = input().lower()
             if find_credential(search_name):
@@ -157,11 +158,11 @@ def passlocker():
             else:
                 print("Failed: Credential not found")
 
-        elif short_code == 'g':
+        elif choice == 'g':
 
             password = generate_Password()
-            print(f"Generated Password {password}")
-        elif short_code == 'ex':
+            print(f"Generated Password: {password}")
+        elif choice == 'ex':
             print("Exiting password bank...")
             break
         else:
