@@ -13,7 +13,9 @@
 git clone git@github.com:AtienoObwanda/PasswordLocker.git
 ```
 <br />
+
 *Once the program has been cloned, run this on your terminal* <br />
+
 ```
 cd PasswordLocker
 ```
@@ -35,6 +37,7 @@ code .
 atom .
 ```
 <br />
+
 *In order to run this project your can git clone it and then open the app in the editor of your choice,open your terminal and run the run.py file and the app will kick start*
 <br />
 
